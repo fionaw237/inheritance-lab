@@ -57,4 +57,10 @@ public class DatabaseAdminTest {
         databaseAdmin.changeName(null);
         assertEquals("Ann Administrator", databaseAdmin.getName());
     }
+
+    @Test
+    public void cantChangeNameToEmptyString() {
+        databaseAdmin.changeName("");
+        assertEquals("Ann Administrator", databaseAdmin.getName());
+    }
 }

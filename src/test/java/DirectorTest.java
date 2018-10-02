@@ -57,6 +57,12 @@ public class DirectorTest {
     }
 
     @Test
+    public void cantChangeNameToEmptyString() {
+        director.changeName("");
+        assertEquals("A. Director", director.getName());
+    }
+
+    @Test
     public void canPayBonus() {
         director.payBonus();
         assertEquals(2000.0, director.payBonus(), 0.1);

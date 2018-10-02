@@ -35,7 +35,7 @@ public abstract class Employee {
     }
 
     public void changeName(String name) {
-        if (name != null) {
+        if (name != null && name != "") {
             this.name = name;
         }
     }

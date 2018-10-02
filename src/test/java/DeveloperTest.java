@@ -57,4 +57,10 @@ public class DeveloperTest {
         developer.changeName(null);
         assertEquals("A. Developer", developer.getName());
     }
+
+    @Test
+    public void cantChangeNameToEmptyString() {
+        developer.changeName("");
+        assertEquals("A. Developer", developer.getName());
+    }
 }

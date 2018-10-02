@@ -62,4 +62,10 @@ public class ManagerTest {
         manager.changeName(null);
         assertEquals("A. Boss", manager.getName());
     }
+
+    @Test
+    public void cantChangeNameToEmptyString() {
+        manager.changeName("");
+        assertEquals("A. Boss", manager.getName());
+    }
 }
